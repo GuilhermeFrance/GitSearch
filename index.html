@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,64 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media-query.css">
   <title>GitSearch</title>
+
 </head>
+
 <body>
   <header class="cabecalho">
-     
-      <a class="itemcabecalho" href="#spacee"> GitHub<strong>Search</strong> </a>
-      <img src="images/gitlogo.png" alt="" class="logoheader">
-    
+
+    <a class="itemcabecalho" href="#spacee"> GitHub<strong>Search</strong> </a>
+    <img src="images/gitlogo.png" alt="" class="logoheader">
+
   </header>
-<div id="searcharea">
-  <input type="text" name="name" id="search" placeholder="Digite o usuário GitHub" autocomplete="off">
-  <button id="searchbtn"> <img  src="/images/searchbutton1.png" alt=""></button>
-  <button id="searchbtn1"> <img   src="/images/mediasearch.png" alt=""></button>
-  <!--<img class="lupa" src="images/searchbutton.png" alt=""> -->
-</div>
-<div class="aftersearch">
-    <div class="box-tags">
-          <img class="imguser" src="/images/usericon.png" alt="">
-            <div class="box-infos">
-                <p>
-                  <span class="titulo">Nome: </span>
-                  <span class="conteudo"> Guilherme France</span>
-                </p>
-                <p>
-                  <span class="titulo">Bio: </span>
-                  <span class="conteudo"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  </span>
-                </p>
-                <p>
-                  <span class="titulo">GitHub: </span>
-                  <span class="conteudo"> <a class="linkprofile" href="https://github.com/GuilhermeFrance" target="_blank"> github.com/GuilhermeFrance</a></span>
-                </p>
-            </div>
+  <div class="container">
+    <div id="searcharea">
+      <input type="text" name="name" id="search" placeholder="Digite o usuário GitHub" autocomplete="off">
+      <button id="searchbtn1">
+        <i data-lucide="user-round-search" class="iconSearch"></i>
+      </button>
+
     </div>
-</div>
+    <div id="afterfind" class="aftersearch esconder">
+      <div class="box-tags">
+        <img id="profileImg" class="imguser" src="/images/usericon.png" alt="">
+        <div class="box-infos">
+          <p>
+            <span class="titulo">Nome: </span>
+            <span id="name"> Guilherme France</span>
+          </p>
+          <p>
+            <span class="titulo">Bio: </span>
+            <span id="bio"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </span>
+          </p>
+          <p>
+            <span class="titulo">GitHub: </span>
+            <span> <a id="link" class="linkprofile" href="https://github.com/GuilhermeFrance" target="_blank">
+                github.com/GuilhermeFrance</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<footer>  
-  <div class="rodape">
-        <p id="footerinfo"> Desenvolvido por <a href="https://guilhermefrance-github-io.vercel.app/" target="_blank" class="developed">Guilherme France</a></p>
-            <div class="icons">
-              <a class="redes" href="https://github.com/GuilhermeFrance" target="_blank"><img class="iconsimgs" src="/images/githubb.png" alt=""></a>
-              <a class="redes" href=""><img class="iconsimgs" src="/images/kedin.png" alt=""></a>
-              <a class="redes" href="https://www.instagram.com/g_france07?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="iconsimgs" src="/images/insta.png" alt=""></a>
-            </div>
-</div>
+  <footer>
 
-</footer>
+    <p id="footerinfo"> Desenvolvido por <a href="https://guilhermefrance-github-io.vercel.app/" target="_blank"
+        class="developed">Guilherme France</a></p>
+    <div class="icons">
+      <a class="redes" href="https://github.com/GuilhermeFrance" target="_blank"><img class="iconsimgs"
+          src="/images/githubb.png" alt=""></a>
+      <a class="redes" href=""><img class="iconsimgs" src="/images/kedin.png" alt=""></a>
+      <a class="redes" href="https://www.instagram.com/g_france07?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img
+          class="iconsimgs" src="/images/insta.png" alt=""></a>
+
+
+  </footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="/js/index.js"></script>
 </body>
+
 </html>
