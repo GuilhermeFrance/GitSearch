@@ -144,6 +144,7 @@ body{
   flex-direction: column;
   gap: 21px;
   max-width: 500px;
+  font-family:'Rethink Sans', sans-serif;
 }
 
 .titulo{
@@ -152,9 +153,7 @@ body{
   font-weight:bolder;
 }
 
-.conteudo{
-  font-family: 'Rethink Sans', sans-serif;
-}
+
 
 .linkprofile{
 
